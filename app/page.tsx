@@ -1,8 +1,9 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import type { ReactNode } from 'react'
 
-const Section = ({ children }: { children: React.ReactNode }) => (
+const Section = ({ children }: { children: ReactNode }) => (
   <motion.section
     initial={{ opacity: 0, y: 60 }}
     whileInView={{ opacity: 1, y: 0 }}
@@ -188,3 +189,4 @@ export default function Home() {
     </main>
   )
 }
+
